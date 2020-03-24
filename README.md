@@ -16,12 +16,14 @@ $ docker run -itd --name togovar-tgvid_numbering -v $(pwd)/numbering/:/root/numb
 $ docker exec togovar-tgvid_numbering sh start_virtuoso.sh
 ```
 - delete and load ttl data
+
 place ttl files in "$(pwd)/numbering/input/load/"
 ```
 $ docker exec togovar-tgvid_numbering sh all_delete_ad_load.sh
 ```
 
 - tgvid numbering
+
 place vcf files in "$(pwd)/numbering/input/vcf/"
 ```
 $ docker exec togovar-tgvid_numbering sh numbering.sh
